@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phrase-O-Matic</title>
+</head>
+<body>
+    <script>
+        function makephrase(){
+            var noun = ["house", "sun", "friend", "ocean", "mountain", "camera", "coffee", "guitar", "adventure", "phone", "time", "dream", "bicycle", "music", "cheese"];
+            var adjective = ["happy", "vivid", "mysterious", "sunny", "cozy", "elegant", "brilliant", "lively", "gentle", "spicy", "enchanting", "soothing", "curious", "radiant", "whimsical"];
+            var plural_noun = ["cats", "dogs", "books", "trees", "computers", "stars", "keys", "apples", "chairs", "flowers", "cars", "hats", "birds", "sandwiches", "pencils"];
+            var adverb = ["quickly", "quietly", "carefully", "suddenly", "joyfully", "swiftly", "happily", "effortlessly", "honestly", "silently", "loudly", "softly", "freely", "warmly", "cautiously"];
+            var verb = ["run", "jump", "sing", "swim", "write", "dance", "cook", "read", "laugh", "sleep", "fly", "explore", "climb", "speak", "create"];
+
+        
+//adjective = adjective[Math.floor(Math.random()*adjective.length)]
+//noun = noun[Math.floor(Math.random()*noun.length)]
+//plural noun = plural_noun[Math.floor(Math.random()*plural_noun.length)]
+//adverb = adverb[Math.floor(Math.random()*adverb.length)]
+//verb = verb[Math.floor(Math.random()*verb.length)]
+
+var phrase = adjective[Math.floor(Math.random()*adjective.length)] + " teachers always give out " + adjective[Math.floor(Math.random()*adjective.length)]
++ " assignments.  But as everyone knows, if you want to pass all your classes so you can go to a/an " + noun[Math.floor(Math.random()*noun.length)] 
++ " and have millions of " + plural_noun[Math.floor(Math.random()*plural_noun.length)] + " in the bank, you must do your homework and study "
++ adverb[Math.floor(Math.random()*adverb.length)] + ".  If you just sit around and " + verb[Math.floor(Math.random()*verb.length)] 
++ ", you wont get ahead in life.  You must learn to pay attention to every " +  adjective[Math.floor(Math.random()*adjective.length)] 
++ " thing your teacher says.  Do not interrupt or whisper to other " + plural_noun[Math.floor(Math.random()*plural_noun.length)]
++ " during class.  Be sure to have a nice, " + adjective[Math.floor(Math.random()*adjective.length)] 
++ " notebook in which you can write down anything the teacher says that seems " + adjective[Math.floor(Math.random()*adjective.length)] 
++ ".  Then go home and memorize all of those " + adjective[Math.floor(Math.random()*adjective.length)] + " notes.  When your teacher gives a surprise quiz,"
++ " you will know all of the " + plural_noun[Math.floor(Math.random()*plural_noun.length)] + "."
+
+
+alert(phrase);
+
+        }
+makephrase();
+ </script>
+    
+</body>
+</html>
